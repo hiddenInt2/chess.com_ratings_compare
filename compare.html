@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="compare.css">
+    </header>
+    <body>
+        <!-- the input for username that will be added and used for data collection -->
+        <input id="userInput" type="text">                  
+        <button onclick="setHTML()" id="addPlayer">Add Player</button>
+        <label class="thresholdLabel">At or Over:</label>
+        <input class="threshold" type="text" style="background-color: #09f;">
+        <input class="threshold" type="text" style="background-color: #3cc;">
+        <input class="threshold" type="text" style="background-color: #3c3;">
+        <label class="thresholdLabel">Under:</label>
+        <input class="threshold" type="text" style="background-color: #ff0;">
+        <input class="threshold" type="text" style="background-color: #f93;">
+        <input class="threshold" type="text" style="background-color: #ff5050;">
+        <button id="openThresholds" onclick="openThresholdInputs()">Color Thresholds</button>
+        <button id="saveThresholds" onclick="setThresholds()">Save Thresholds</button>
+        <!-- the div that contains buttons representing usernames that are currently in the array, with some here that I made because of the present values of the array. to delete a username simply click a button -->
+        <div id="usernamesContainer"></div>
+        <div id="dataGridWrapper">
+            <!-- the div that actually contains the table of data gathered from the chess.com API -->
+            <div id="dataContainer"></div>
+            <!-- the div that contains the graphed data for visual cues -->
+            <div id="graphContainer"></div>
+        </div>
+        
+        <!-- a link to my javascript file user for the functionality and interactive aspects of the page -->
+        <script src="chesscomDataFinder.js"></script>
+    </body>
+</html>

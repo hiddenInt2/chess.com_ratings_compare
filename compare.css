@@ -1,0 +1,90 @@
+/* some marginal styling to make the page more appealing for users */
+body {
+    background-color: #808080;
+    font-family: 'Courier New', Courier, monospace;
+}
+div {margin: 5px;}
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 6px 11px;
+    margin: 3px;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+}
+input {
+    padding: 4px;
+    margin: 7px 0px;
+    border: none;
+    border-radius: 2px;
+}
+p {
+    margin: 2px;
+    font-size: 0.8em;
+}
+a {text-decoration: none;}
+td a {color: black;}
+
+#userInput {margin-left: 9px;}
+#addPlayer:hover {background-color: #99ff99;}
+.player:hover {background-color: #ff9999 !important;}
+.threshold {
+    width: 50px;
+    display: none;
+}
+.thresholdLabel {display: none;}
+#saveThresholds {display: none;}
+#saveThresholds:hover {background-color: #99ff99;}
+#dataGridWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+#dataContainer td {
+    background-color: #ccc;
+    padding: 5px 10px;
+}
+#dataContainer th {
+    background-color: #b3b3b3;
+    text-decoration: underline;
+    padding: 5px 10px;
+}
+#graphContainer {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+.barWrapper {
+    min-height: 400px;
+    width: 50px;
+    height: 90%;
+    margin: 0 5px;
+    position: relative;
+}
+.bar {
+    margin: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.bar.top {border-radius: 3px 3px 0 0;}
+.bar div {
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    border-radius: 5px;
+    filter: brightness(1.2);
+}
+.bar div table {font-size: 0.8em;}
+.bar div * {margin: 5px;}
+.bar:hover div {display: block;}
+img {
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    margin: 0;
+    border: 3px solid #fff;
+}
