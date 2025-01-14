@@ -1,0 +1,1 @@
+This is a simple Javascript, HTML, and CSS project that I quickly made to compare ratings between chess.com accounts. It has ways to color code certian ranges of ratings and compares the searched for player's bullet, blitz and rapid ratings. For more information, check out my blog post: "not available yet"
